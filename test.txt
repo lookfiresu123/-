@@ -1,0 +1,127 @@
+Apr 21 02:21:19 localhost systemd-fsck: fsck: error 2 (No such file or directory) while executing fsck.ext2 for /dev/disk/by-uuid/4433c8d1-760a-4a8c-9449-eab4d0cb7833
+Apr 21 02:21:19 localhost systemd-fsck: fsck failed with error code 8.
+Apr 21 02:21:19 localhost systemd-fsck: Ignoring error.
+Apr 21 02:21:31 localhost kernel: end_request: I/O error, dev fd0, sector 0
+Apr 21 02:21:31 localhost kernel: end_request: I/O error, dev fd0, sector 0
+Apr 21 02:21:37 localhost avahi-daemon[787]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+Apr 20 18:21:40 localhost xinit: (WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+Apr 20 18:22:48 localhost kdumpctl: cat: write error: Broken pipe
+Apr 20 18:23:05 localhost firstboot: firstboot: Fatal IO error 11 (资源暂时不可用) on X server :9.
+Apr 20 18:23:05 localhost firstboot: g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.
+Apr 20 18:23:06 localhost dbus-daemon: dbus[811]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.25" (uid=0 pid=12192 comm="/usr/sbin/gdm ") interface="org.freedesktop.DBus.Properties" member="GetAll" error name="(unset)" Apr 20 18:23:06 localhost dbus[811]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.25" (uid=0 pid=12192 comm="/usr/sbin/gdm ") interface="org.freedesktop.DBus.Properties" member="GetAll" error name="(unset)" requested_repApr 20 18:23:11 localhost gnome-session: (gnome-settings-daemon:12241): color-plugin-WARNING **: failed to get edid: unable to get EDID for output
+Apr 20 18:23:11 localhost gnome-session: (gnome-settings-daemon:12241): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 20 18:23:28 localhost gnome-session: g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.
+Apr 20 18:23:28 localhost gnome-session: (gnome-settings-daemon:12241): GLib-GIO-WARNING **: Error releasing name org.gnome.SettingsDaemon: 连接已关闭
+Apr 20 18:23:28 localhost gnome-session: (gnome-settings-daemon:12241): GLib-GIO-WARNING **: Error releasing name org.gnome.SettingsDaemon.Power: 连接已关闭
+Apr 20 18:23:28 localhost gnome-session: (gnome-settings-daemon:12241): GLib-GIO-WARNING **: Error releasing name org.gnome.SettingsDaemon.XRANDR: 连接已关闭
+Apr 20 18:23:28 localhost gnome-session: (gnome-settings-daemon:12241): GLib-GIO-WARNING **: Error releasing name org.gnome.SettingsDaemon.Keyboard: 连接已关闭
+Apr 20 18:23:28 localhost gnome-session: g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.
+Apr 20 18:23:30 localhost udisksd[12616]: Error probing device: Error sending ATA command IDENTIFY PACKET DEVICE to /dev/sr0: ATA command failed: error=0x01 count=0x02 status=0x50 (g-io-error-quark, 0)
+Apr 20 18:23:32 localhost gnome-session: (gnome-settings-daemon:12568): color-plugin-WARNING **: failed to get edid: unable to get EDID for output
+Apr 20 18:23:32 localhost gnome-session: (gnome-settings-daemon:12568): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 20 18:23:36 localhost gnome-session: GDBus.Error:org.gtk.GDBus.UnmappedGError.Quark._imsettings_2derror_2dquark.Code5: Current desktop isn't targeted by IMSettings.
+Apr 20 18:23:39 localhost gnome-session: (tracker-miner-fs:12923): Tracker-WARNING **: File 'file:///usr' has been reenqueued more than 2 times. It will not be indexed.
+Apr 20 18:23:39 localhost vmusr[12898]: [ warning] [Gtk] gtk_disable_setlocale() must be called before gtk_init()
+Apr 20 18:23:41 localhost gnome-session: (tracker-miner-fs:12923): Tracker-WARNING **: File 'file:///usr/share' has been reenqueued more than 2 times. It will not be indexed.
+Apr 20 18:23:41 localhost gnome-session: (tracker-miner-fs:12923): Tracker-WARNING **: File 'file:///usr/share/gnome-documents' has been reenqueued more than 2 times. It will not be indexed.
+Apr 20 18:23:42 localhost gnome-session: (tracker-miner-fs:12923): Tracker-WARNING **: File 'file:///usr/share/gnome-documents/getting-started' has been reenqueued more than 2 times. It will not be indexed.
+Apr 20 18:23:42 localhost gnome-session: (tracker-miner-fs:12923): Tracker-WARNING **: File 'file:///usr/share/gnome-documents/getting-started/C' has been reenqueued more than 2 times. It will not be indexed.
+Apr 20 18:23:42 localhost gnome-session: (tracker-miner-fs:12923): Tracker-WARNING **: File 'file:///usr/share/gnome-documents/getting-started/C/gnome-documents-getting-started.pdf' has been reenqueued more than 2 times. It will not be indexed.
+Apr 20 18:24:13 localhost gnome-session: gnome-session[12388]: WARNING: Not able to stop app from its condition: Not running
+Apr 20 18:24:13 localhost gnome-session[12388]: WARNING: Not able to stop app from its condition: Not running
+Apr 20 18:29:26 localhost gnome-session: (gnome-settings-daemon:12568): updates-plugin-WARNING **: failed to download: Process had to be killed to be cancelled
+Apr 20 20:57:55 localhost gnome-session: Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Apr 20 20:58:05 localhost yum[49851]: Installed: libgpg-error-1.12-3.el7.i686
+Apr 20 21:00:11 localhost avahi-daemon[50788]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+Apr 20 21:00:11 localhost avahi-daemon[50791]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+Apr 20 22:01:33 localhost gnome-session: Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Apr 23 23:38:56 localhost systemd-fsck: fsck: error 2 (No such file or directory) while executing fsck.ext2 for /dev/disk/by-uuid/4433c8d1-760a-4a8c-9449-eab4d0cb7833
+Apr 23 23:38:56 localhost systemd-fsck: fsck failed with error code 8.
+Apr 23 23:38:56 localhost systemd-fsck: Ignoring error.
+Apr 23 23:39:03 localhost kernel: end_request: I/O error, dev fd0, sector 0
+Apr 23 23:39:03 localhost kernel: end_request: I/O error, dev fd0, sector 0
+Apr 23 23:39:09 localhost avahi-daemon[796]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+Apr 23 23:39:10 localhost vmsvc[799]: [ warning] [GLib-GObject] Attempt to add property ToolsCoreService::tcs-app-ctx after class was initialised
+Apr 23 23:39:10 localhost vmsvc[799]: [ warning] [GLib-GObject] Attempt to add property ToolsCoreService::tcs-prop-thread-pool after class was initialised
+Apr 23 15:39:13 localhost dbus-daemon: dbus[823]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=837 comm="/usr/sbin/gdm ") interface="org.freedesktop.DBus.Properties" member="GetAll" error name="(unset)" reqApr 23 15:39:13 localhost dbus[823]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=837 comm="/usr/sbin/gdm ") interface="org.freedesktop.DBus.Properties" member="GetAll" error name="(unset)" requested_reply=Apr 23 15:39:39 localhost gnome-session: (gnome-settings-daemon:3912): color-plugin-WARNING **: failed to get edid: unable to get EDID for output
+Apr 23 15:39:39 localhost gnome-session: (gnome-settings-daemon:3912): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 23 15:40:09 localhost gnome-session: g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.
+Apr 23 15:40:09 localhost gnome-session: g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.
+Apr 23 15:40:14 localhost udisksd[8742]: Error probing device: Error sending ATA command IDENTIFY PACKET DEVICE to /dev/sr0: ATA command failed: error=0x01 count=0x02 status=0x50 (g-io-error-quark, 0)
+Apr 23 15:40:19 localhost gnome-session: (gnome-settings-daemon:8505): color-plugin-WARNING **: failed to get edid: unable to get EDID for output
+Apr 23 15:40:19 localhost gnome-session: (gnome-settings-daemon:8505): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 23 15:40:25 localhost vmusr[10352]: [ warning] [GLib-GObject] Attempt to add property ToolsCoreService::tcs-app-ctx after class was initialised
+Apr 23 15:40:25 localhost vmusr[10352]: [ warning] [GLib-GObject] Attempt to add property ToolsCoreService::tcs-prop-thread-pool after class was initialised
+Apr 23 15:40:32 localhost vmusr[10352]: [ warning] [Gtk] gtk_disable_setlocale() must be called before gtk_init()
+Apr 23 15:40:35 localhost gnome-session: GDBus.Error:org.gtk.GDBus.UnmappedGError.Quark._imsettings_2derror_2dquark.Code5: Current desktop isn't targeted by IMSettings.
+Apr 23 15:40:42 localhost kdumpctl: cat: write error: Broken pipe
+Apr 23 15:41:27 localhost gnome-session: (gnome-settings-daemon:8505): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 23 15:41:27 localhost gnome-session: (gnome-settings-daemon:8505): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 23 15:41:35 localhost gnome-session: (gnome-settings-daemon:8505): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 23 15:41:35 localhost gnome-session: (gnome-settings-daemon:8505): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 23 15:41:35 localhost gnome-session: (gnome-settings-daemon:8505): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 23 15:41:43 localhost gnome-session: (gnome-settings-daemon:8505): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 23 15:41:43 localhost gnome-session: (gnome-settings-daemon:8505): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 23 22:24:02 localhost gnome-session: (gnome-settings-daemon:8505): keyboard-plugin-WARNING **: Couldn't upload new XKB keyboard description
+Apr 23 22:29:58 localhost gnome-session: (firefox:44579): GLib-GObject-WARNING **: Attempt to add property GnomeProgram::sm-connect after class was initialised
+Apr 23 22:29:58 localhost gnome-session: (firefox:44579): GLib-GObject-WARNING **: Attempt to add property GnomeProgram::show-crash-dialog after class was initialised
+Apr 23 22:29:58 localhost gnome-session: (firefox:44579): GLib-GObject-WARNING **: Attempt to add property GnomeProgram::display after class was initialised
+Apr 23 22:29:58 localhost gnome-session: (firefox:44579): GLib-GObject-WARNING **: Attempt to add property GnomeProgram::default-icon after class was initialised
+Apr 25 01:26:56 localhost systemd-fsck: fsck: error 2 (No such file or directory) while executing fsck.ext2 for /dev/disk/by-uuid/4433c8d1-760a-4a8c-9449-eab4d0cb7833
+Apr 25 01:26:56 localhost systemd-fsck: fsck failed with error code 8.
+Apr 25 01:26:56 localhost systemd-fsck: Ignoring error.
+Apr 25 01:27:03 localhost kernel: end_request: I/O error, dev fd0, sector 0
+Apr 25 01:27:03 localhost kernel: end_request: I/O error, dev fd0, sector 0
+Apr 25 01:27:09 localhost avahi-daemon[796]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+Apr 25 01:27:11 localhost vmsvc[798]: [ warning] [GLib-GObject] Attempt to add property ToolsCoreService::tcs-app-ctx after class was initialised
+Apr 25 01:27:11 localhost vmsvc[798]: [ warning] [GLib-GObject] Attempt to add property ToolsCoreService::tcs-prop-thread-pool after class was initialised
+Apr 24 17:27:15 localhost dbus-daemon: dbus[819]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.4" (uid=0 pid=834 comm="/usr/sbin/gdm ") interface="org.freedesktop.DBus.Properties" member="GetAll" error name="(unset)" reqApr 24 17:27:15 localhost dbus[819]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.4" (uid=0 pid=834 comm="/usr/sbin/gdm ") interface="org.freedesktop.DBus.Properties" member="GetAll" error name="(unset)" requested_reply=Apr 24 17:27:39 localhost gnome-session: (gnome-settings-daemon:2626): color-plugin-WARNING **: failed to get edid: unable to get EDID for output
+Apr 24 17:27:40 localhost gnome-session: (gnome-settings-daemon:2626): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 24 17:29:44 localhost gnome-session: g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.
+Apr 24 17:29:44 localhost gnome-session: g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.
+Apr 24 17:29:47 localhost udisksd[3067]: Error probing device: Error sending ATA command IDENTIFY PACKET DEVICE to /dev/sr0: ATA command failed: error=0x01 count=0x02 status=0x50 (g-io-error-quark, 0)
+Apr 24 17:29:48 localhost gnome-session: (gnome-settings-daemon:3007): color-plugin-WARNING **: failed to get edid: unable to get EDID for output
+Apr 24 17:29:48 localhost gnome-session: (gnome-settings-daemon:3007): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 24 17:29:50 localhost gnome-session: (gnome-settings-daemon:3007): keyboard-plugin-WARNING **: Couldn't upload new XKB keyboard description
+Apr 24 17:29:52 localhost vmusr[3315]: [ warning] [GLib-GObject] Attempt to add property ToolsCoreService::tcs-app-ctx after class was initialised
+Apr 24 17:29:52 localhost vmusr[3315]: [ warning] [GLib-GObject] Attempt to add property ToolsCoreService::tcs-prop-thread-pool after class was initialised
+Apr 24 17:29:54 localhost gnome-session: GDBus.Error:org.gtk.GDBus.UnmappedGError.Quark._imsettings_2derror_2dquark.Code5: Current desktop isn't targeted by IMSettings.
+Apr 24 17:29:55 localhost vmusr[3315]: [ warning] [Gtk] gtk_disable_setlocale() must be called before gtk_init()
+Apr 24 17:30:23 localhost gnome-session: (gnome-settings-daemon:3007): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 24 17:37:44 localhost kernel: errwarn[4115]: segfault at 0 ip 0000000000400708 sp 00007fffec9a4010 error 6 in errwarn[400000+1000]
+Apr 24 17:52:06 localhost kernel: errwarn[4422]: segfault at 0 ip 0000000000400790 sp 00007fff9ff1e950 error 4 in errwarn[400000+1000]
+Apr 24 17:53:16 localhost kernel: errwarn[4488]: segfault at 0 ip 0000000000400790 sp 00007fff82f323a0 error 4 in errwarn[400000+1000]
+Apr 24 17:58:28 localhost kernel: errwarn[4685]: segfault at 0 ip 0000000000400790 sp 00007fff6312de80 error 4 in errwarn[400000+1000]
+Apr 24 18:01:47 localhost kernel: errwarn[4884]: segfault at 0 ip 0000000000400790 sp 00007fffcb55b450 error 4 in errwarn[400000+1000]
+Apr 24 18:05:03 localhost kernel: errwarn[4952]: segfault at 0 ip 0000000000400790 sp 00007fff7a6278c0 error 4 in errwarn[400000+1000]
+Apr 24 18:05:46 localhost kernel: errwarn[4972]: segfault at 0 ip 0000000000400790 sp 00007fff26701300 error 4 in errwarn[400000+1000]
+Apr 24 18:09:32 localhost kernel: errwarn[5147]: segfault at 0 ip 0000000000400790 sp 00007fff27128230 error 4 in errwarn[400000+1000]
+Apr 24 18:10:04 localhost kernel: errwarn[5220]: segfault at 0 ip 0000000000400790 sp 00007fffeed73f40 error 4 in errwarn[400000+1000]
+Apr 24 18:17:11 localhost kernel: errwarn[5358]: segfault at 0 ip 0000000000400878 sp 00007fff7a5b8650 error 4 in errwarn[400000+1000]
+Apr 24 18:17:46 localhost kernel: errwarn[5381]: segfault at 0 ip 0000000000400878 sp 00007fff42bf35c0 error 4 in errwarn[400000+1000]
+Apr 24 18:18:07 localhost kernel: errwarn[5391]: segfault at 0 ip 0000000000400878 sp 00007fff9249bd60 error 4 in errwarn[400000+1000]
+Apr 24 18:18:12 localhost kernel: errwarn[5408]: segfault at 0 ip 0000000000400878 sp 00007fffbe111790 error 4 in errwarn[400000+1000]
+Apr 24 18:22:45 localhost kernel: errwarn[5566]: segfault at 0 ip 0000000000400847 sp 00007fff40a6ae30 error 4 in errwarn[400000+1000]
+Apr 24 18:22:51 localhost kernel: errwarn[5574]: segfault at 0 ip 0000000000400847 sp 00007fff9fac3260 error 4 in errwarn[400000+1000]
+Apr 24 18:24:08 localhost kernel: errwarn[5626]: segfault at 0 ip 00000000004007db sp 00007fff6431cf60 error 4 in errwarn[400000+1000]
+Apr 24 18:24:41 localhost kernel: errwarn[5658]: segfault at 0 ip 00000000004007db sp 00007fffc52af530 error 4 in errwarn[400000+1000]
+Apr 27 21:16:47 localhost systemd-fsck: fsck: error 2 (No such file or directory) while executing fsck.ext2 for /dev/disk/by-uuid/4433c8d1-760a-4a8c-9449-eab4d0cb7833
+Apr 27 21:16:47 localhost systemd-fsck: fsck failed with error code 8.
+Apr 27 21:16:47 localhost systemd-fsck: Ignoring error.
+Apr 27 21:16:54 localhost kernel: end_request: I/O error, dev fd0, sector 0
+Apr 27 21:16:54 localhost kernel: end_request: I/O error, dev fd0, sector 0
+Apr 27 21:17:00 localhost avahi-daemon[795]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+Apr 27 21:17:01 localhost vmsvc[797]: [ warning] [GLib-GObject] Attempt to add property ToolsCoreService::tcs-app-ctx after class was initialised
+Apr 27 21:17:01 localhost vmsvc[797]: [ warning] [GLib-GObject] Attempt to add property ToolsCoreService::tcs-prop-thread-pool after class was initialised
+Apr 27 13:17:03 localhost dbus-daemon: dbus[822]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.4" (uid=0 pid=839 comm="/usr/sbin/gdm ") interface="org.freedesktop.DBus.Properties" member="GetAll" error name="(unset)" reqApr 27 13:17:03 localhost dbus[822]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.4" (uid=0 pid=839 comm="/usr/sbin/gdm ") interface="org.freedesktop.DBus.Properties" member="GetAll" error name="(unset)" requested_reply=Apr 27 13:17:26 localhost gnome-session: (gnome-settings-daemon:2625): color-plugin-WARNING **: failed to get edid: unable to get EDID for output
+Apr 27 13:17:26 localhost gnome-session: (gnome-settings-daemon:2625): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 27 13:18:09 localhost gnome-session: g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.
+Apr 27 13:18:09 localhost gnome-session: g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.
+Apr 27 13:18:13 localhost udisksd[3062]: Error probing device: Error sending ATA command IDENTIFY PACKET DEVICE to /dev/sr0: ATA command failed: error=0x01 count=0x02 status=0x50 (g-io-error-quark, 0)
+Apr 27 13:18:14 localhost gnome-session: (gnome-settings-daemon:2997): color-plugin-WARNING **: failed to get edid: unable to get EDID for output
+Apr 27 13:18:14 localhost gnome-session: (gnome-settings-daemon:2997): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 27 13:18:15 localhost gnome-session: (gnome-settings-daemon:2997): keyboard-plugin-WARNING **: Couldn't upload new XKB keyboard description
+Apr 27 13:18:18 localhost vmusr[3314]: [ warning] [GLib-GObject] Attempt to add property ToolsCoreService::tcs-app-ctx after class was initialised
+Apr 27 13:18:18 localhost vmusr[3314]: [ warning] [GLib-GObject] Attempt to add property ToolsCoreService::tcs-prop-thread-pool after class was initialised
+Apr 27 13:18:19 localhost gnome-session: GDBus.Error:org.gtk.GDBus.UnmappedGError.Quark._imsettings_2derror_2dquark.Code5: Current desktop isn't targeted by IMSettings.
+Apr 27 13:18:23 localhost vmusr[3314]: [ warning] [Gtk] gtk_disable_setlocale() must be called before gtk_init()
