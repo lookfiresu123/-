@@ -125,3 +125,23 @@ Apr 27 13:18:18 localhost vmusr[3314]: [ warning] [GLib-GObject] Attempt to add 
 Apr 27 13:18:18 localhost vmusr[3314]: [ warning] [GLib-GObject] Attempt to add property ToolsCoreService::tcs-prop-thread-pool after class was initialised
 Apr 27 13:18:19 localhost gnome-session: GDBus.Error:org.gtk.GDBus.UnmappedGError.Quark._imsettings_2derror_2dquark.Code5: Current desktop isn't targeted by IMSettings.
 Apr 27 13:18:23 localhost vmusr[3314]: [ warning] [Gtk] gtk_disable_setlocale() must be called before gtk_init()
+Apr 28 02:15:33 localhost systemd-fsck: fsck: error 2 (No such file or directory) while executing fsck.ext2 for /dev/disk/by-uuid/4433c8d1-760a-4a8c-9449-eab4d0cb7833
+Apr 28 02:15:33 localhost systemd-fsck: fsck failed with error code 8.
+Apr 28 02:15:33 localhost systemd-fsck: Ignoring error.
+Apr 28 02:15:40 localhost kernel: end_request: I/O error, dev fd0, sector 0
+Apr 28 02:15:40 localhost kernel: end_request: I/O error, dev fd0, sector 0
+Apr 28 02:15:46 localhost avahi-daemon[795]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+Apr 28 02:15:47 localhost vmsvc[798]: [ warning] [GLib-GObject] Attempt to add property ToolsCoreService::tcs-app-ctx after class was initialised
+Apr 28 02:15:47 localhost vmsvc[798]: [ warning] [GLib-GObject] Attempt to add property ToolsCoreService::tcs-prop-thread-pool after class was initialised
+Apr 27 18:15:50 localhost dbus-daemon: dbus[824]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=836 comm="/usr/sbin/gdm ") interface="org.freedesktop.DBus.Properties" member="GetAll" error name="(unset)" reqApr 27 18:15:50 localhost dbus[824]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=836 comm="/usr/sbin/gdm ") interface="org.freedesktop.DBus.Properties" member="GetAll" error name="(unset)" requested_reply=Apr 27 18:16:09 localhost gnome-session: (gnome-settings-daemon:2625): color-plugin-WARNING **: failed to get edid: unable to get EDID for output
+Apr 27 18:16:09 localhost gnome-session: (gnome-settings-daemon:2625): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 27 18:16:28 localhost gnome-session: g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.
+Apr 27 18:16:28 localhost gnome-session: g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.
+Apr 27 18:16:31 localhost udisksd[3047]: Error probing device: Error sending ATA command IDENTIFY PACKET DEVICE to /dev/sr0: ATA command failed: error=0x01 count=0x02 status=0x50 (g-io-error-quark, 0)
+Apr 27 18:16:33 localhost gnome-session: (gnome-settings-daemon:2987): color-plugin-WARNING **: failed to get edid: unable to get EDID for output
+Apr 27 18:16:33 localhost gnome-session: (gnome-settings-daemon:2987): color-plugin-WARNING **: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Apr 27 18:16:34 localhost gnome-session: (gnome-settings-daemon:2987): keyboard-plugin-WARNING **: Couldn't upload new XKB keyboard description
+Apr 27 18:16:37 localhost vmusr[3314]: [ warning] [GLib-GObject] Attempt to add property ToolsCoreService::tcs-app-ctx after class was initialised
+Apr 27 18:16:37 localhost vmusr[3314]: [ warning] [GLib-GObject] Attempt to add property ToolsCoreService::tcs-prop-thread-pool after class was initialised
+Apr 27 18:16:38 localhost gnome-session: GDBus.Error:org.gtk.GDBus.UnmappedGError.Quark._imsettings_2derror_2dquark.Code5: Current desktop isn't targeted by IMSettings.
+Apr 27 18:16:40 localhost vmusr[3314]: [ warning] [Gtk] gtk_disable_setlocale() must be called before gtk_init()
