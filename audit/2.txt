@@ -1,0 +1,12 @@
+----
+time->Sun Aug 23 17:20:00 2015
+type=USER_AUTH msg=audit(1440321600.007:465): pid=6334 uid=1000 auid=1000 ses=1 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:authentication acct="root" exe="/usr/bin/su" hostname=? addr=? terminal=pts/0 res=failed'
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015年 08月 23日 星期日 17:20:02 CST
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+----
+time->Sun Aug 23 17:20:44 2015
+type=USER_AUTH msg=audit(1440321644.465:475): pid=6517 uid=1000 auid=1000 ses=1 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:authentication acct="root" exe="/usr/bin/su" hostname=? addr=? terminal=pts/0 res=failed'
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015年 08月 23日 星期日 17:20:53 CST
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<

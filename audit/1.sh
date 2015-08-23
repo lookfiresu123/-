@@ -1,3 +1,5 @@
+# kill the pid of dangerous process
+
 #!/bin/sh
 
 for file in `wc -l 1.txt`
@@ -47,5 +49,5 @@ do
     fi
     old=$new
     echo -e "\n"
-    sleep 15s
+    sleep 10s
 done
