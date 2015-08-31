@@ -35,6 +35,7 @@ do
         echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" >> 2.txt
         echo `date` >> 2.txt
         echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<" >> 2.txt
+        `zenity --notification --text=warning`
     fi
     for file in `wc -l 2.txt`
     do
@@ -43,5 +44,5 @@ do
     done
     old=$new
     echo -e "\n"
-    sleep 10s
+    sleep 30s
 done

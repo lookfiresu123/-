@@ -49,5 +49,5 @@ do
     fi
     old=$new
     echo -e "\n"
-    sleep 10s
+    sleep 30s
 done

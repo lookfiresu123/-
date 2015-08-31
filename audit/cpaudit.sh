@@ -17,5 +17,5 @@ do
     then
         cp /var/log/audit/audit.log /home/lookfiresu/save.log
     fi
-    sleep 15s
+    sleep 3600s
 done
