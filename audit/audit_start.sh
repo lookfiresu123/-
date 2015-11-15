@@ -23,6 +23,26 @@ echo "-a entry,always -S open -S write -S read -F path=/var/log/audit/audit.log 
 #客体为进程：echo "-a entry,always -S all -F pid=相应的进程号" >> audit.rules
 #客体为用户：echo "-a exit,always -S all -F uid=相应的用户id" >> audit.rules
 
+#为程序分配设置用户id
+echo "-a exit,always -S chown -F key=chown" >> audit.rules
+echo "-a exit,always -S lchown -F key=lchown" >> audit.rules
+echo "-a exit,always -S fchown -F key=fchown" >> audit.rules
+echo "-a exit,always -S fchownat -F key=fchownat" >> audit.rules
+
+#改变日期和时间
+echo "-a exit,always -S settimeofday -F key=settimeofday" >> audit.rules
+echo "-a exit,always -S stime -F key=stime" >> audit.rules
+echo "-a exit,always -S clock_settime -F key=clock_settime" >> audit.rules
+
+#将某个客体引入某个用户的地址空间
+# echo "-w 客体的绝对路径名 -p rwxa -k 关键字" >> audit.rules
+
+#删除客体
+echo "-a exit,always -S kill -F key=kill" >> audit.rules
+
+#基于身份鉴别或客体属性的用户的审计活动
+#echo "-a exit,always -S 系统调用号 -F uid=用户id" >> audit.rules
+
 #实时报警
 #echo "yum install git"
 #echo "git clone https://github.com/lookfiresu123/four-level.git"
