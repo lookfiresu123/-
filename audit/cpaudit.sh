@@ -15,7 +15,7 @@ do
     done
     if [ $newaudit != $oldaudit  ];
     then
-        cp /var/log/audit/audit.log /home/lookfiresu/save.log
+        cp /var/log/audit/audit.log ~/save.log
     fi
     sleep 3600s
 done
