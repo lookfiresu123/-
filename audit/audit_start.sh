@@ -43,13 +43,8 @@ echo "-a exit,always -S kill -F key=kill" >> audit.rules
 #基于身份鉴别或客体属性的用户的审计活动
 #echo "-a exit,always -S 系统调用号 -F uid=用户id" >> audit.rules
 
-#实时报警
+#实时报警:2.sh; 审计数据可用性确保:cpaudit.sh; 黑名单:total.sh
 #echo "yum install git"
 #echo "git clone https://github.com/lookfiresu123/four-level.git"
 cd /home/root/four-level/audit
-./2.sh
-
-#审计数据可用性确保
-./cpaudit.sh
-
-
+./2.sh & ./cpaudit.sh & ./total.sh
