@@ -1,3 +1,0 @@
-----
-time->Sun Aug 23 17:26:48 2015
-type=USER_AUTH msg=audit(1440322008.597:489): pid=6994 uid=1000 auid=1000 ses=1 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:authentication acct="root" exe="/usr/bin/su" hostname=? addr=? terminal=pts/1 res=failed'

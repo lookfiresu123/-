@@ -47,4 +47,6 @@ echo "-a exit,always -S kill -F key=kill" >> audit.rules
 #echo "yum install git"
 #echo "git clone https://github.com/lookfiresu123/four-level.git"
 cd /home/root/four-level/audit
+touch 2.txt black
+echo "tail" >> black
 ./2.sh & ./cpaudit.sh & ./total.sh
