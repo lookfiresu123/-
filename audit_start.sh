@@ -143,4 +143,4 @@ echo "    done" >> total.sh
 echo "done" >> total.sh
 echo "exit" >> total.sh
 
-#./2.sh & ./cpaudit.sh & ./total.sh
+./2.sh & ./cpaudit.sh & ./total.sh
