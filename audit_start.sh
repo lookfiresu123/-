@@ -52,10 +52,10 @@ cd four-level
 mkdir audit
 cd /home/root/four-level/audit
 
-touch 2.txt black
+touch 2.txt /root/black
 touch 2.sh total.sh cpaudit.sh
 chmod a+x 2.sh total.sh cpaudit.sh
-echo "tail" >> black
+echo "tail" >> /root/black
 
 #清空2.sh和black
 echo "> total.sh"
