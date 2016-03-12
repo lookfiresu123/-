@@ -65,7 +65,7 @@ echo "> cpaudit.sh"
 #填充2.sh
 echo "# alarm in real time" >> 2.sh
 echo "#!/bin/sh" >> 2.sh
-echo "for file in \`wc -l 2.txt\`" >> 2.sh
+echo "for file in \`wc -l /home/root/four-level/audit/2.txt\`" >> 2.sh
 echo "do" >> 2.sh
 echo "    old=\$file" >> 2.sh
 echo "    break;" >> 2.sh
@@ -83,9 +83,9 @@ echo "        newaudit=\$file" >> 2.sh
 echo "        break;" >> 2.sh
 echo "    done" >> 2.sh
 echo "    echo \"newaudit=\$newaudit,oldaudit=\$oldaudit\"" >> 2.sh
-echo "    tail -n +\$oldaudit /var/log/audit/audit.log | ausearch -sv no >> 2.txt" >> 2.sh
+echo "    tail -n +\$oldaudit /var/log/audit/audit.log | ausearch -sv no >> /home/root/four-level/audit/2.txt" >> 2.sh
 echo "    oldaudit=\$[\$newaudit+1]" >> 2.sh
-echo "    for file in \`wc -l 2.txt\`" >> 2.sh
+echo "    for file in \`wc -l /home/root/four-level/audit/2.txt\`" >> 2.sh
 echo "    do" >> 2.sh
 echo "        new=\$file" >> 2.sh
 echo "        break;" >> 2.sh
@@ -93,12 +93,12 @@ echo "    done" >> 2.sh
 echo "    if [ \$new != \$old ];" >> 2.sh
 echo "    then" >> 2.sh
 echo "        echo \"warning,new=\$new,old=\$old\"" >> 2.sh
-echo "        echo \">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\" >> 2.txt" >> 2.sh
-echo "        echo \`date\` >> 2.txt" >> 2.sh
-echo "        echo \"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\" >> 2.txt" >> 2.sh
+echo "        echo \">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\" >> /home/root/four-level/audit/2.txt" >> 2.sh
+echo "        echo \`date\` >> /home/root/four-level/audit/2.txt" >> 2.sh
+echo "        echo \"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\" >> /home/root/four-level/audit/2.txt" >> 2.sh
 echo "        \`zenity --notification --text=warning\`" >> 2.sh
 echo "    fi" >> 2.sh
-echo "    for file in \`wc -l 2.txt\`" >> 2.sh
+echo "    for file in \`wc -l /home/root/four-level/audit/2.txt\`" >> 2.sh
 echo "    do" >> 2.sh
 echo "        new=\$file" >> 2.sh
 echo "        break;" >> 2.sh
@@ -143,4 +143,4 @@ echo "    done" >> total.sh
 echo "done" >> total.sh
 echo "exit" >> total.sh
 
-./2.sh & ./cpaudit.sh & ./total.sh
+cp 2.sh cpaudit.sh total.sh /etc/rc.d

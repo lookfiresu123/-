@@ -186,3 +186,12 @@ echo "oscap oval eval --results rhsa-results-oval.xml --report oval-report.html 
 
 # federal标准和管理
 echo "yum install dracut-fips"
+
+# 执行seliux
+./autoseconf.sh
+
+# 执行pam
+./ks.cfg
+
+# 执行四级安全审计
+./audit_start.sh
