@@ -14,21 +14,21 @@ echo "auth required pam_faillock.so preauth silent audit deny=3 even_deny_root u
 echo "auth [default=die] pam_faillock.so authfail audit deny=3 unlock_time=600 deny=3 even_deny_root unlock_time=600" >> /etc/pam.d/password-auth
 echo "account required pam_faillock.so" >> /etc/pam.d/system-auth
 echo "account required pam_faillock.so" >> /etc/pam.d/password-auth
-echo "ln -sf /etc/pam.d/system-auth-local /etc/pam.d/system-auth"
-echo "ln -sf /etc/pam.d/password-auth-local /etc/pam.d/password-auth"
+ln -sf /etc/pam.d/system-auth-local /etc/pam.d/system-auth
+ln -sf /etc/pam.d/password-auth-local /etc/pam.d/password-auth
 
 # 会话锁定
-echo "yum install vlock"
+yum install vlock
 
 # 只读挂载
-echo "cd /etc/udev/rules.d/"
-echo "touch udev.rules"
+cd /etc/udev/rules.d/
+touch udev.rules
 echo "SUBSYSTEM==\"block\",ATTRS{removable}==\"1\",RUN{program}=\"/sbin/blockdev --setro %N\"" >> udev.rules
-echo "cd ~"
+cd ~
 
 # 允许自动注销
-echo "yum install screen"
-echo "sed -i \'1i\"trap \"\" 1 2 3 15\"\' /etc/profile"
+yum install screen
+sed -i '1itrap "" 1 2 3 15' /etc/profile
 echo "SCREENEXEC=\"screen\"" >> /etc/profile
 echo "if \[ -w \$\(tty\)  \]; then" >> /etc/profile
 echo "trap \"exec \$SCREENEXEC\" 1 2 3 15" >> /etc/profile
@@ -44,10 +44,10 @@ echo "fs.protected_hardlinks = 1" >> /usr/lib/sysctl.d/50-default.conf
 echo "fs.protected_symlinks = 1" >> /usr/lib/sysctl.d/50-default.conf
 
 # 强化rpcbind的安全性
-echo "yum install firewalld"
+yum install firewalld
 
 # 强化FTP服务
-echo "yum install vsftpd"
+yum install vsftpd
 echo "banner_file=/etc/banners/ftp.msg" >> /etc/vsftpd/vsftpd.conf
 echo "local_enable=NO" >> /etc/vsftpd/vsftpd.conf
 
@@ -57,18 +57,18 @@ echo "yum install dovecot" >> /etc/postfix/main.cf
 
 # 安全网络服务
 echo "in.telnetd : ALL : severity emerg" >> /etc/hosts.deny
-echo "yum install net-tools"
-echo "yum install nmap"
-echo "/sbin/sysctl -w net.ipv4.conf.all.accept_source_route=0"
-echo "sysctl -w net.ipv4.conf.default.rp_filter=1"
+yum install net-tools
+yum install nmap
+/sbin/sysctl -w net.ipv4.conf.all.accept_source_route=0
+sysctl -w net.ipv4.conf.default.rp_filter=1
 
 # 防火墙
-echo "yum install firewalld"
-echo "yum install firewall-config"
-echo "systemctl start firewalld"
-echo "systemctl start firewalld"
-echo "systemctl enable firewalld"
-echo "systemctl enable firewalld"
+yum install firewalld
+yum install firewall-config
+systemctl start firewalld
+systemctl start firewalld
+systemctl enable firewalld
+systemctl enable firewalld
 
 # 使用iptables
 # echo "systemctl disable firewalld"
@@ -80,27 +80,27 @@ echo "systemctl enable firewalld"
 # echo "systemctl enable ip6tables"
 
 # 用DNSSEC强化DNS
-echo "yum install unbound"
-echo "systemctl status unbound"
-echo "systemctl start unbound"
-echo "systemctl enable unbound"
-echo "yum install dnssec-trigger"
-echo "systemctl status dnssec-trigger"
-echo "systemctl start dnssec-trigger"
-echo "systemctl enable dnssec-trigger"
+yum install unbound
+systemctl status unbound
+systemctl start unbound
+systemctl enable unbound
+yum install dnssec-trigger
+systemctl status dnssec-trigger
+systemctl start dnssec-trigger
+systemctl enable dnssec-trigger
 
 # 强化VPNs
-echo "yum install libreswan"
-echo "yum info libreswan"
-echo "rm /etc/ipsec.d/*db"
-echo "ipsec initnss"
-echo "systemctl status ipsec"
-echo "systemctl start ipsec"
-echo "systemctl enable ipsec"
-echo "ipsec newhostkey --configdir /etc/ipsec.d --output /etc/ipsec.d/www.example.com.secrets"
-echo "ipsec showhostkey --left"
-echo "ipsec newhostkey --configdir /etc/ipsec.d --output /etc/ipsec.d/www.example.com.secrets"
-echo "ipsec showhostkey --right"
+yum install libreswan
+yum info libreswan
+rm /etc/ipsec.d/*db
+ipsec initnss
+systemctl status ipsec
+systemctl start ipsec
+systemctl enable ipsec
+ipsec newhostkey --configdir /etc/ipsec.d --output /etc/ipsec.d/www.example.com.secrets
+ipsec showhostkey --left
+ipsec newhostkey --configdir /etc/ipsec.d --output /etc/ipsec.d/www.example.com.secrets
+ipsec showhostkey --right
 echo "conn mysubnet" >> /etc/ipsec.d/my_site-to-site.conf
 echo "    also=mytunnel" >> /etc/ipsec.d/my_site-to-site.conf
 echo "    leftsubnet=192.0.1.0/24" >> /etc/ipsec.d/my_site-to-site.conf
@@ -119,12 +119,12 @@ echo "    rightid=@east.example.com" >> /etc/ipsec.d/my_site-to-site.conf
 echo "    right=192.1.2.45" >> /etc/ipsec.d/my_site-to-site.conf
 echo "    rightrsasigkey=0sAQO3fwC6nSSGgt64DWiYZzuHbc4 [...] D/v8t5YTQ==" >> /etc/ipsec.d/my_site-to-site.conf
 echo "    authby=rsasig" >> /etc/ipsec.d/my_site-to-site.conf
-echo "ipsec auto --add mysubnet"
-echo "ipsec auto --add mysubnet6"
-echo "ipsec auto --add mytunnel"
-echo "ipsec auto --up mysubnet"
-echo "ipsec auto --up mysubnet6"
-echo "ipsec auto --up mytunnel"
+ipsec auto --add mysubnet
+ipsec auto --add mysubnet6
+ipsec auto --add mytunnel
+ipsec auto --up mysubnet
+ipsec auto --up mysubnet6
+ipsec auto --up mytunnel
 
 # 使用openssl
 # 列出所有公钥加密算法
@@ -165,27 +165,28 @@ echo "ipsec auto --up mytunnel"
 # openssl rand -out rand-file -rand seed-file
 
 # 安全审计
-echo "yum install audit"
-echo "ervice auditd start"
-echo "chkconfig auditd on"
-echo "service auditd stop"
-echo "service auditd status"
+yum install audit
+ervice auditd start
+chkconfig auditd on
+service auditd stop
+service auditd status
 # 配置审计规则的相关命令
 # auditctl -w filepath -p wa -k key_name
 # auditctl -a action,filter -S system_call -F field=value -k key_name
-echo "cp /etc/audit/audit.rules /etc/audit/audit.rules_backup"
-echo "cp /usr/share/doc/audit-version/stig.rules /etc/audit/audit.rules"
+cp /etc/audit/audit.rules /etc/audit/audit.rules_backup
+cp /usr/share/doc/audit-version/stig.rules /etc/audit/audit.rules
 
 # 潜在侵害分析
-echo "yum install scap-workbench"
-echo "yum install scap-security-guide"
-echo "yum install openscap-scanner"
-echo "wget http://www.redhat.com/security/data/oval/com.redhat.rhsa-all.xml"
-echo "wget http://www.redhat.com/security/data/metrics/com.redhat.rhsa-all.xccdf.xml"
-echo "oscap oval eval --results rhsa-results-oval.xml --report oval-report.html com.redhat.rhsa-all.xml"
+yum install scap-workbench
+yum install scap-security-guide
+yum install openscap-scanner
+yum install wget
+wget http://www.redhat.com/security/data/oval/com.redhat.rhsa-all.xml
+wget http://www.redhat.com/security/data/metrics/com.redhat.rhsa-all.xccdf.xml
+oscap oval eval --results rhsa-results-oval.xml --report oval-report.html com.redhat.rhsa-all.xml
 
 # federal标准和管理
-echo "yum install dracut-fips"
+yum install dracut-fips
 
 # 执行seliux
 ./autoseconf.sh
