@@ -166,7 +166,7 @@ ipsec auto --up mytunnel
 
 # 安全审计
 yum install audit
-ervice auditd start
+service auditd start
 chkconfig auditd on
 service auditd stop
 service auditd status
